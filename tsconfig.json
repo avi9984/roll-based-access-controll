@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+      "target": "ES6",
+      "module": "commonjs",
+      "strict": true,
+      "esModuleInterop": true,
+      "moduleResolution": "Node",
+      "noImplicitAny": true,
+      "strictNullChecks": true,
+      "strictFunctionTypes": true,
+      "paths": {
+        "*":["./node_modules/*"]
+      },
+      "noUnusedLocals": true,
+      "noUnusedParameters": true,
+      "skipLibCheck": true,
+      "outDir": "./dist",
+      "rootDir": "./src"
+    },
+    "include": ["./src/**/*.ts"],
+    "exclude": ["node_modules"]
+  }
+  
