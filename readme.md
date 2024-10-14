@@ -49,7 +49,7 @@ This is a Node.js API project that implements role-based access control (RBAC) u
    ```bash
    npm run dev
    ```
-
+ 5. The API will be available at http://localhost:3000.
 ## API Endpoints
 
 ### User Routes
