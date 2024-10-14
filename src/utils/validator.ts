@@ -1,4 +1,4 @@
-export const validEmail = (Email:string) => {
+export const validEmail = (Email:string):boolean => {
     if (/^\w+([\.-]?\w+)@\w+([\.-]?\w+)(\.\w{2,3})+$/.test(Email)) {
         return false;
     } else {
@@ -6,10 +6,10 @@ export const validEmail = (Email:string) => {
     }
 };
 
-export const validPwd = (Password:string) => {
+export const validPwd = (Password:string):boolean => {
     if (
         /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,15}$/.test(
-            Password
+            Password,
         )
     ) {
         return false;

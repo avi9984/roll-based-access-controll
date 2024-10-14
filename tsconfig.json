@@ -11,13 +11,14 @@
       "paths": {
         "*":["./node_modules/*"]
       },
+      "typeRoots": ["./node_modules/@types", "./types"],
       "noUnusedLocals": true,
       "noUnusedParameters": true,
       "skipLibCheck": true,
       "outDir": "./dist",
       "rootDir": "./src"
     },
-    "include": ["./src/**/*.ts"],
+    "include": ["./src/**/*.ts","custom.d.ts"],
     "exclude": ["node_modules"]
   }
   
