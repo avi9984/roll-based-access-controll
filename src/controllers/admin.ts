@@ -81,7 +81,7 @@ export const deleteUser = async (req: Request, res: Response): Promise<void> => 
     }
 };
 
-export const getUsersRegisteredLast7Days = async (req: Request, res: Response): Promise<void> => {
+export const getUsersRegisteredLast7Days = async (_: Request, res: Response): Promise<void> => {
     try {
         const sevenDaysAgo = new Date();
         sevenDaysAgo.setDate(sevenDaysAgo.getDate() - 7);  // Calculate 7 days ago

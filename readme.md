@@ -40,7 +40,7 @@ This is a Node.js API project that implements role-based access control (RBAC) u
 3. Set up environment variables:
    Create a `.env` file in the root directory and add the following:
    ```
-   PORT=3000
+    PORT=3000
     MONGO_URL="mongodb+srv://Avi9984:JM6hnTiQIRViVdA3@cluster0.qfc4n.mongodb.net/RBAM"
     SECRET_KEY="ce5fa5bbe05df2e8df4c89aa64a3a7b2039caa75cdc0c1efd1697d1844db8f7be6d1c184f4"
    ```
@@ -52,15 +52,14 @@ This is a Node.js API project that implements role-based access control (RBAC) u
 
 ## API Endpoints
 
-### Auth Routes
+### User Routes
 - **POST** `http://localhost:3000/users/register` - Register a new user
 - **POST** `http://localhost:3000/users/login` - Login user and get a JWT token
-
-### User Routes
 - **GET** `/api/users/profile/:id` - Get user profile by ID (Protected)
 
-- **GET** `/api/users` - Get all users with pagination (Admin-only)
+- **GET** `http://localhost:3000/admins/users?role=user` - Get all users with pagination (Admin-only)
 - **GET** `http://localhost:3000/admins/users/recent` - Get users registered in the last 7 days (Admin-only)
+- **DELETE** `http://localhost:3000/admins/user/:id` - Delete user (Admin-only)
 
 ### Middleware
 - `protect`: Protect routes with JWT authentication.

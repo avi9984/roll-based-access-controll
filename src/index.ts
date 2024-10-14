@@ -9,7 +9,7 @@ import userRoutes from './routes/user';
 import adminRoutes from './routes/admin';
 
 app.use(express.json());
-app.use(logRequests)
+app.use(logRequests);
 app.use(express.urlencoded({ extended: true }));
 
 
